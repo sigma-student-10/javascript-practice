@@ -1,4 +1,4 @@
-//DOM Events
+// //DOM Events
 
 // let btn = document.querySelector("button");
 
@@ -6,9 +6,9 @@
 //     alert("button was clicked");
 // }
 
-// DOM events
+// // DOM events
 
-// let btns = document.querySelectorAll("button");
+// let btn = document.querySelectorAll("button");
 
 // for(btn of btns){
 //     btn.onclick = sayHello;
@@ -18,18 +18,38 @@
 //     alert("Hello");
 // }
 
-// Onmouseenter
+// // Onmouseenter
+
+// let btns = document.querySelectorAll("button");
+
+// for(btn of btns) {
+//     btn.onclick = sayHello;
+//     btn.onmouseenter = function () {
+//         console.log("you entered a button");
+//     };
+//     console.dir(btn);
+// }
+
+// function sayHello() {
+//     alert("hello!");
+// }
+
+// Event Listener
 
 let btns = document.querySelectorAll("button");
 
 for(btn of btns) {
-    btn.onclick = sayHello;
-    btn.onmouseenter = function () {
-        console.log("you entered a button");
-    };
-    console.dir(btn);
+    btn.addEventListener("click", sayHello);
+    btn.addEventListener("click", sayName);
+    btn.addEventListener("dblclick", function() {
+        console.log ("you double clicked me");
+    });
 }
 
 function sayHello() {
-    alert("hello!");
+    alert("Apna College");
+}
+
+function sayName() {
+    alert("Afjol Hossain");
 }
