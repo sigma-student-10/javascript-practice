@@ -26,3 +26,20 @@ body {
 #description {
   background-color: antiquewhite;
 }
+
+.blue {
+  color:red
+}
+
+.yellowBg {
+  background-color: yellow;
+}
+
+body {
+  background-color: gray;
+}
+
+.box2 {
+    background-color: pink;
+    border: 2px solid black;
+}
