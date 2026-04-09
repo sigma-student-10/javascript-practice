@@ -20,7 +20,7 @@ console.dir(document.querySelectorAll("div a"));
 
 // Manipulating Style
 
-let links = document.querySelectorAll(".box a");
+let link = document.querySelectorAll(".box a");
 
 for(let i=0; i<links.length; i++){
     links[i].style.color = "yellow";
@@ -29,7 +29,7 @@ for(let i=0; i<links.length; i++){
 
 //for of loop using
 
-let link = document.querySelectorAll(".box a");
+let links = document.querySelectorAll(".box a");
 
 for(link of links) {
     link.style.color = "purple";
