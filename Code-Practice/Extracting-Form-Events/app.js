@@ -9,5 +9,5 @@ form.addEventListener("submit", function (event) {
     console.log(user.value);
     console.log(pass.value);
 
-    alert(`Hi ${user.value}, your password is set ${pass.value}`);
-})
+    alert(`Hi ${user.value}, your password is set to ${pass.value}`);
+});
